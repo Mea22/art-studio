@@ -1,0 +1,274 @@
+body{
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    font-family: 'Outfit', sans-serif;
+}
+
+header{
+    display: flex;
+}
+.go-back{
+    width: 264px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    text-decoration: none;
+    height: 72px;
+    background-color: #151515;
+    color: #FFFFFF;
+    margin-left: 156px;
+}
+.go-back .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:56px;
+    height: 72px;
+    background-color: #D5966C;
+}
+header .img img{
+height: 24px;
+width: 8px;
+}
+.button-text{
+    font-family: 'Big Shoulders Display', cursive;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.94px;
+    letter-spacing: 3.64px;
+    width: 208px;
+    padding-left: 32px;
+}
+
+.go-back .button-text:hover{
+    background-color: #D5966C;
+}
+.go-back .button-text:hover ~.img{
+    background-color: #151515;
+}
+main{
+    display: flex;
+    height: 548px;
+    background-color: #151515;
+}
+main div{
+    display: flex;
+}
+main h1{
+    font-size: 70px;
+    font-weight: 900;
+    color: #FFFFFF;
+    width: 350px;
+    margin: 104px 220px 304px 165px;
+}
+.street{
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    margin-top: 104px;
+    margin-right: 165px;
+}
+.street h3{
+    font-size: 36px;
+    font-weight: 900;
+    color: #D5966C;
+    margin-bottom: 24px;
+}
+.adress{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+.street p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 540px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    height: 244px;
+    background-color: #D5966C;
+}
+.info p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    max-width: 430px;
+    margin-left: 140.43px;
+    color: #151515;
+}
+.info img{
+    width: 159.57px;
+}
+.footer{
+    display: flex;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 280px;
+    width: 100px;
+}
+.contact i {
+    color: #151515;
+    font-size: 20px;
+}
+.contact i:hover {
+    color:#ffffff
+}
+@media only screen and (max-width: 1440px){
+    .map-tablet, .map-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px){
+    .map-desktop, .map-mobile{
+        display: none;
+    }
+    .map-tablet{
+        display: flex
+    }
+    .go-back{
+        margin-left: 39px;
+    }
+    main{
+        height: 436px;
+    }
+    main h1{
+        font-size: 55px;
+        line-height: 50px;
+        width: 223px;
+        margin: 88px 68px 248px 39px;
+    }
+    .street{
+        margin-top: 88px;
+        margin-right: 40px;
+        width: 398px;
+    }
+    .street h3{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .adress{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .street p{
+        font-size: 18px;
+        line-height: 28px;
+        width: 398px;
+    }
+    footer{
+        height: 216px;
+    }
+    .info{
+        margin-left: 39px;
+        align-items: flex-start;
+    }
+    .info img{
+        width: 110.05px;
+    }
+    .info p{
+        font-size: 16px;
+        line-height: 26px;
+        width: 281px;
+        margin-left: 64.95px;
+    }
+    .contact{
+        margin-left: 133px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .map-desktop, .map-tablet{
+        display: none;
+    }
+    .map-mobile{
+        display: flex
+    }
+    .go-back{
+        margin-left: 0px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 493px;
+    }
+    main h1{
+        font-size: 50px;
+        line-height: 45px;
+        width: 343px;
+        margin: 48px 16px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .street{
+        margin:0px 0px 0px 16px;
+        width:343px
+    }
+    .street h3{
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        width: 343px;
+    }
+    .adress{
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .street p{
+        font-size: 18px;
+        line-height: 28px;
+        width: 343px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 336px;
+    }
+    .footer{
+        flex-direction: column;
+        margin-left: 32px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 48px;
+        margin-bottom: 38px;
+
+    }
+    .info p{
+        font-size: 16px;
+        line-height: 26px;
+        width: 311px;
+        height: 104px;
+        margin:0px;
+        margin-top: 38px;
+    }
+    .contact{
+        margin: 0px
+    }
+}
